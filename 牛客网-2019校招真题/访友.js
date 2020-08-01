@@ -16,13 +16,13 @@
 // 输出
 // 2
 
-function test(n){
-    let count=0;
-    let step=5;
-    while(n){
-        if(n>=step){
-            count+=Math.floor(n/step);
-            n-=Math.floor(n/step)*step;
+function test(n) {
+    let count = 0;
+    let step = 5;
+    while (n) {
+        if (n >= step) {
+            count += Math.floor(n / step);
+            n -= Math.floor(n / step) * step;
         }
         step--;
     }
